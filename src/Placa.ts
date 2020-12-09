@@ -9,7 +9,7 @@ export const placa = (digitos: string): string => {
     const letras: string[] = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 
     digitos = digitos.split('')
-      .map((digito, i) => i === 4 ? letras[parseInt(digito, 10)] : digito)
+      .map(function (digito, i) { return i === 4 ? letras[parseInt(digito, 10)] : digito })
       .join('')
 
   }
