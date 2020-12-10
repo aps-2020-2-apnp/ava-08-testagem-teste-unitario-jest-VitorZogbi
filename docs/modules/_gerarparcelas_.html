@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>&quot;main&quot; | tscv</title>
+	<title>&quot;gerarParcelas&quot; | tscv</title>
 	<meta name="description" content="Documentation for tscv">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="_main_.html">&quot;main&quot;</a>
+					<a href="_gerarparcelas_.html">&quot;gerarParcelas&quot;</a>
 				</li>
 			</ul>
-			<h1>Module &quot;main&quot;</h1>
+			<h1>Module &quot;gerarParcelas&quot;</h1>
 		</div>
 	</div>
 </header>
@@ -71,55 +71,53 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Variables</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-variable tsd-parent-kind-module"><a href="_main_.html#quem" class="tsd-kind-icon">quem</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
 							<h3>Functions</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_main_.html#hello" class="tsd-kind-icon">hello</a></li>
+								<li class="tsd-kind-function tsd-parent-kind-module"><a href="_gerarparcelas_.html#gerarparcelas" class="tsd-kind-icon">gerar<wbr>Parcelas</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Variables</h2>
-				<section class="tsd-panel tsd-member tsd-kind-variable tsd-parent-kind-module">
-					<a name="quem" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagConst">Const</span> quem</h3>
-					<div class="tsd-signature tsd-kind-icon">quem<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = &quot;World&quot;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/aps-2020-2-apnp/ava-08-testagem-teste-unitario-jest-VitorZogbi/blob/655ff6b/src/main.ts#L5">main.ts:5</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Functions</h2>
 				<section class="tsd-panel tsd-member tsd-kind-function tsd-parent-kind-module">
-					<a name="hello" class="tsd-anchor"></a>
-					<h3>hello</h3>
+					<a name="gerarparcelas" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> gerar<wbr>Parcelas</h3>
 					<ul class="tsd-signatures tsd-kind-function tsd-parent-kind-module">
-						<li class="tsd-signature tsd-kind-icon">hello<span class="tsd-signature-symbol">(</span>q<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">gerar<wbr>Parcelas<span class="tsd-signature-symbol">(</span>valor<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, numeroParcelas<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/aps-2020-2-apnp/ava-08-testagem-teste-unitario-jest-VitorZogbi/blob/655ff6b/src/main.ts#L1">main.ts:1</a></li>
+									<li>Defined in gerarParcelas.ts:8</li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<p>Função para gerar parcela de uma compra de forma que os centavos e excedente sejão movidos para a última parcela, deixando as primeiras parcelas <strong>inteiras</strong>. A função recebe duas entradas descritas abaixo e devolve as parcelas em um vetor numérico.</p>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>q: <span class="tsd-signature-type">string</span></h5>
+									<h5>valor: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Parâmetro que armazena o valor da compra</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<h5>numeroParcelas: <span class="tsd-signature-type">number</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<div class="lead">
+											<p>Parâmentro que armazena o número de parcelas da compra
+											Para gerar parcelas o valor da compra precisa ser acima</p>
+										</div>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -134,21 +132,18 @@
 					<li class=" tsd-kind-module">
 						<a href="_placa_.html">&quot;<wbr>Placa&quot;</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="_gerarparcelas_.html">&quot;gerar<wbr>Parcelas&quot;</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="_main_.html">&quot;main&quot;</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-variable tsd-parent-kind-module">
-						<a href="_main_.html#quem" class="tsd-kind-icon">quem</a>
-					</li>
 					<li class=" tsd-kind-function tsd-parent-kind-module">
-						<a href="_main_.html#hello" class="tsd-kind-icon">hello</a>
+						<a href="_gerarparcelas_.html#gerarparcelas" class="tsd-kind-icon">gerar<wbr>Parcelas</a>
 					</li>
 				</ul>
 			</nav>
