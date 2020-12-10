@@ -37,3 +37,6 @@ Compra no valor de _R$ 31,07_ parcelada em três vezes:
 ## Desafio
 
 Documentar funções, métodos e atributos e gerar a documentação com TypeDoc.
+
+### typedoc
+instalando  npm install --save-dev typedoc
